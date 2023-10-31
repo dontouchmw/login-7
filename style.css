@@ -1,0 +1,209 @@
+.neon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    box-shadow:  3px 3px 15px #000000,
+             -3px -3px 15px #33ab00;
+    transition: 1s;
+}
+.neon:hover {
+    background-color: #33ab00;
+    color: #33ab00;
+    transition: 0s;
+}
+.neon2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    box-shadow:  3px 3px 15px #000000,
+             -3px -3px 15px #33ab00;
+    transition: 1s;
+}
+.neon2:hover {
+    background-color: #ff00a6;
+    transition: 0s;
+}
+.screen-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+}
+section {
+    background-color: rgb(50, 50, 50);
+}
+body {
+    overflow: hidden;
+}
+.inputbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    top: 25%;
+    left: 50%;
+    translate: -50%;
+    width: 405px;
+    height: 405px;
+    overflow: hidden;
+    z-index: 1;
+}  
+.inputbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    z-index: 2;
+    overflow: hidden;
+}
+.log {
+    color: #4dff00;
+    font-size: 25px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+.inputs {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #646464;
+    width: 50%;
+    outline: none;
+    background-color: transparent;
+    color: aliceblue;
+}
+.login {
+    margin-top: 5px;
+    padding: 6px;
+    width: 100px;
+    color: #4dff00;
+    border: #3bc600 solid 1;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.login:hover {
+   background-color: #2a2a2a;
+}
+.in {
+    color: #33ab00;
+    margin-bottom: 8px;
+}
+.forget {
+    color: aliceblue;
+    margin-bottom: 0;
+}
+a {
+    color: rgb(255, 0, 255);
+    text-decoration: none;
+}
+.signup {
+    color: aliceblue;
+    margin-top: 0;
+}
+a:hover {
+    color: #3bc600;
+}
+.loginneon {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.loginneon::before {
+    content: "";
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    background: linear-gradient(0deg , transparent, 
+    transparent , #4dff00 , #4dff00  , #4dff00);
+    z-index: 1;
+    animation: animate 32s linear infinite;
+    animation-delay: 0s;
+    transform-origin: bottom right;
+    opacity: 1;
+}
+.loginneon::after {
+    content: "";
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    background: linear-gradient(0deg , transparent, 
+    transparent , #ff00a6 , #ff00a6  , #ff00a6);
+    z-index: 1;
+    animation: animate 32s linear infinite;
+    animation-delay: -16s;
+    transform-origin: bottom right;
+    opacity: 1;
+}
+.loginneon2 {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.loginneon2::before {
+    content: "";
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    background: linear-gradient(0deg , transparent, 
+    transparent , #ff00a6 , #ff00a6  , #ff00a6);
+    z-index: 1;
+    animation: animate 32s linear infinite;
+    animation-delay: -24s;
+    transform-origin: bottom right;
+    opacity: 1;
+}
+.loginneon2::after {
+    content: "";
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    background: linear-gradient(0deg , transparent, 
+    transparent , #4dff00 , #4dff00  , #4dff00);
+    z-index: 1;
+    animation: animate 32s linear infinite;
+    animation-delay: -8s;
+    transform-origin: bottom right;
+    opacity: 1;
+}
+@keyframes animate {
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
